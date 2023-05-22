@@ -2,8 +2,6 @@ statsUsername: stats
 statsPassword: statsPwd
 tlsCert: "tls.crt"
 tlsKey: "tls.key"
-tlsCertMetrics: "tlsMetrics.crt"
-tlsKeyMetrics: "tlsMetrics.key"
 #ingressFQDN: "secured-apps.cluster-pzhsw.gcp.redhatworkshops.io"
 ingressFQDN: "shard.apps.ocp1poste.lab.psi.pnq2.redhat.com"
 image: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:7bc1c378acc4c3c7b6e12b98cbe1f069d88b3b3eb9780acbf938003f289ab055
