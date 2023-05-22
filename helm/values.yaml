@@ -15,12 +15,12 @@ service:
     app: router
 # with service.type = NodePort, allocateLoadBalancerNodePorts should be set to false
 # httpNodePort  and httpsNodePort are optional to set the node port to be allocated
-  type: LoadBalancer
+  type: NodePort
 # allocateLoadBalancerNodePorts should be set only with service.type = LoadBalancer
-  allocateLoadBalancerNodePorts: true
+  allocateLoadBalancerNodePorts: false
   httpNodePort: 30003
   httpsNodePort: 30004
-replicas: 1
+replicas: 3
 # If you  want to expose the router with host Networking set  useHostNetwork: to true
 useHostNetwork: false
 # You can then set the ports to be used with httpRouterPort, httpsRouterPort and  metricsRouterPort
