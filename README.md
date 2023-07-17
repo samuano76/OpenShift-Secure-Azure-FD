@@ -97,7 +97,7 @@ curl -H 'X-Azure-FDID: 1234' http://${ROUTE_HOSTNAME}
 
 **ACTION GOAL:** run the default router pods on a predefinite set of worker nodes. Is not needed if you are willing to execute the default router and the shard on the same set of nodes
 
-In the following steps we will segregate the default router to be hosted only on nodes with the `router-sharded: yes`.
+In the following steps we will segregate the default router to be hosted only on nodes with the `router-sharded: no`.
 
 Add the `nodePlacement` to the default IngressController:
 
