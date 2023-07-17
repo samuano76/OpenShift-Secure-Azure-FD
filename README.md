@@ -75,7 +75,7 @@ $ oc expose svc cakephp-ex --hostname ${ROUTE_HOSTNAME}
 $ oc annotate route cakephp-ex haproxy.router.openshift.io/azure-front-door-id=1234
 ```
 
-4. Optional: in case you are using a shard, you will need to annotate the route in order to "land" on the proper router instance, `type=shard` is just an example here, the label must match the `routeSelector` of the shard:
+4. Optional: in case you are using a shard, you will need to label the route in order to "land" on the proper router instance, `type=shard` is just an example here, the label must match the `routeSelector` of the shard:
 
 ```
 $ oc label route cakephp-ex -n cakephp-ex type=sharded
